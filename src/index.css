@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-slate-800 bg-slate-100;
+    font-family: 'Nunito', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  code, pre, kbd {
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+  }
+}
+
+/* Custom scrollbars for clean look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.7);
+}
+
+/* CodeMirror fill container */
+.cm-editor {
+  height: 100% !important;
+}
+
+.cm-scroller {
+  overflow: auto !important;
+  font-family: 'Fira Code', 'Consolas', 'Courier New', monospace !important;
+}
